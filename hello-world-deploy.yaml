@@ -31,9 +31,9 @@ spec:
           protocol: TCP
         resources:
           limits:
-            memory: 2Gi
+            memory: {{ memory_limit }}
           requests:
-            memory: 2Gi
+            memory: {{ memory_request }}
         livenessProbe:
           httpGet:
             path: /health
